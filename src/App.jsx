@@ -10,6 +10,7 @@ import { Stacks } from "./components/Stacks"
 
 // 
 import {tecnologias} from "./utilities/tecnologias"
+import {proyectos} from "./utilities/proyectos"
 
 function App() {
 
@@ -29,21 +30,24 @@ function App() {
 
         <Header> my proyects</Header>
         <section className=" bg-slate-200 ">
-          <ProyectLeft
+          {
+            proyectos.map( (proyecto, index) => (
+              <ProyectLeft 
+                key={index}
+                proyecto={proyecto}
+              />
+            ))
+          }
+          {/* <ProyectLeft
             title={'Seguimiento para veterinaria'}
             description={'Mi Mi experiencia en HTML, CSS y JavaScript me permite desarrollar sitios web responsive y optimizados para diferentes dispositivos. Además, tengo experiencia trabajando con frameworks y librerías frontend como React, TailwindCss, Boostrap'}
             proyectImg={proyectImg}
-          />
-            <ProyectRight
-            title={'Seguimiento para veterinaria'}
-            description={'Mi Mi experiencia en HTML, CSS y JavaScript me permite desarrollar sitios web responsive y optimizados para diferentes dispositivos. Además, tengo experiencia trabajando con frameworks y librerías frontend como React, TailwindCss, Boostrap'}
-            proyectImg={proyectImg}
-          />
+          /> */}
         </section>
 
         <Header> Stack</Header>
         <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-5">
-          
+
           {
             tecnologias.map( (lenguaje, index) => (
               <Stacks 
