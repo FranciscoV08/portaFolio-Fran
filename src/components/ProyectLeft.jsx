@@ -1,10 +1,12 @@
 import imgGithub from "../img/github.png";
 import imgWebSite from "../img/website.png";
+// import imgpp from "../assets/proyects/Paciente.png";
 
 export const ProyectLeft = ({ proyecto }) => {
   const { id, title, description, done } = proyecto;
-  const imgUrlP = `../assets/proyects/${id}.png`;
-  console.log(done);
+  const imgUrlP = `./assets/proyects/${id}.png`;
+  const imgpp = `../assets/proyects/${id}.png`
+  console.log(imgUrlP);
 
   return (
     <>
@@ -71,6 +73,7 @@ export const ProyectLeft = ({ proyecto }) => {
           </div>
         </div>
       )}
+      <img src={imgpp} alt="ppp" />
     </>
   );
 };
