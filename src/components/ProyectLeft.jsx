@@ -5,7 +5,6 @@ import imgWebSite from "../img/website.png";
 export const ProyectLeft = ({ proyecto }) => {
   const { id, title, description, done } = proyecto;
   const imgUrlP = `assets/proyects/${id}.png`;
-  console.log(imgUrlP);
 
   return (
     <>
@@ -72,7 +71,7 @@ export const ProyectLeft = ({ proyecto }) => {
           </div>
         </div>
       )}
-      <img src={imgpp} alt="ppp" />
+      {/* <img src={imgpp} alt="ppp" /> */}
     </>
   );
 };
