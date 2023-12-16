@@ -4,8 +4,7 @@ import imgWebSite from "../img/website.png";
 
 export const ProyectLeft = ({ proyecto }) => {
   const { id, title, description, done } = proyecto;
-  const imgUrlP = `./assets/proyects/${id}.png`;
-  const imgpp = `../assets/proyects/${id}.png`
+  const imgUrlP = `assets/proyects/${id}.png`;
   console.log(imgUrlP);
 
   return (
