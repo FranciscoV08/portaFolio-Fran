@@ -8,7 +8,7 @@ import { ProyectRight } from "./components/ProyectRight"
 import proyectImg from '../src/img/01-capturaProyect.png'
 import { Stacks } from "./components/Stacks"
 
-// im
+// Los JSON
 import {tecnologias} from "./utilities/tecnologias"
 import {proyectos} from "./utilities/proyectos"
 
